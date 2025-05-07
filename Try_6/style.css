@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#nav{
+    width:100%;
+    height: 80px;
+    /* background-color: #333; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+#part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#part2 h4{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+#part2 h4 span{
+    color:rgb(151, 148, 148)
+}
+
+#nav2{
+    width: 100%;
+    /* background-color: red; */
+    height: 40px;
+    display: flex;
+    gap:50px;
+    align-items: center;
+    padding:0 40px;
+    /* justify-content: space-between; */
+}
+#nav2 h4{
+    /* text-decoration: none; */
+    color: #1b1a1a;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 120px);
+    /* background-color: #333; */
+}
+
+#text{
+    width: 100%;
+    height: 40%;
+    /* background-color: aqua; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: flex;
+}
+#text::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+}
+
+#text::-webkit-scrollbar-thumb {
+    width:5px;
+    background-color: #ee9837;
+    border-radius: 10px;
+}
+
+.words{
+    flex-shrink: 0;
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.words h4{
+    font-size: 90px;
+    font-weight: 400;
+    color: #1b1b1b;
+}
+#image{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: rgb(147, 212, 145);
+}
+#image img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+#image::-webkit-scrollbar {
+    display: none;
+}
+
