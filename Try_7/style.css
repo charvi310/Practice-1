@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 213, 195);
+}
+
+#nav{
+    width:100%;
+    height: 80px;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 40px 50px;
+    display:flex;
+}
+
+#nav h3{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#list{
+    display:flex;
+    gap: 40px;
+    width: fit-content;
+    height: 80px;
+    /* background-color: rgb(83, 63, 37); */
+    align-items: center;
+    justify-content: center;
+}
+#list h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(45, 46, 46);
+}
+
+#icon{
+    display: flex;
+    gap: 20px;
+}
+#icon i{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#list input{
+    width: 250px;
+    height:40px;
+    font-size: 23px;
+    border: none;
+    /* border-radius: 5px; */
+}
+
+#list input, textarea{
+    font-size: 15px;
+    padding:15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#center{
+    padding: 20px 100px;
+    width: 100%;
+    margin-top: 80px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text1{
+    width: fit-content;
+    height: 100px;
+    /* background-color: rgb(216, 181, 236); */
+}
+#text1 p{
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+#text2{
+    width: fit-content;
+    height: 100px;
+    /* background-color: rgb(205, 231, 170); */
+}
+
+#text2 p{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+#shop h4{
+    text-align: center;
+    font-size:18px;
+    margin-top: 8px;
+    background-color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 5px;
+    color: black;
+}
+#shop h4:hover{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#text{
+    width: fit-content;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:10%;
+    left:35%;
+}
+
+#t1{
+    font-size: 150px;
+    line-height: 140px;
+    font-family: "Dynalight", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color:rgb(17, 0, 0);
+}
+
+#t2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#t3{
+    font-size: 6vw;
+    line-height: 1.5vw;
+    font-family: "Luxurious Script", cursive, oblique;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(17, 0, 0);
+}
+
+#image{
+    width: 100%;
+    margin-top: 5px;
+    height: calc(100% - 325px);
+    /* background-color: rgb(87, 87, 128); */
+}
+
+#pic1{
+    position:absolute;
+    z-index: 1;
+    left: 59%;
+    bottom: 6%;
+    width: 15%;
+    height: calc(100% - 430px);
+    background-color: yellowgreen;
+    background: url(https://plus.unsplash.com/premium_photo-1682095820464-dbebd2ecb7f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 60% 35%;
+}
+#pic{
+    position:absolute;
+    left: 40%;
+    width: 20%;
+    height: calc(100% - 325px);
+    background-color: yellowgreen;
+    background: url(https://plus.unsplash.com/premium_photo-1682095664848-014a0a2bfd8a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 35%;
+}
+
+
+#pic2{
+    position:absolute;
+    left: 27%;
+    bottom: 6%;
+    z-index: 1;
+    width: 15%;
+    height: calc(100% - 430px);
+    background-color: yellowgreen;
+    background: url(https://plus.unsplash.com/premium_photo-1673758899533-53c7addeaf78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI0fHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    position:absolute;
+    right: 7%;
+    bottom: 10%;
+    z-index: 2;
+    width: 20%;
+    height: calc(100% - 500px);
+    background: url(https://plus.unsplash.com/premium_photo-1673758905706-03326b61d44f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0% 45%;
+}
+
+#img2{
+    position:absolute;
+    left: 8%;
+    bottom: 10%;
+    z-index: 2;
+    width: 20%;
+    height: calc(100% - 500px);
+    background: url(https://plus.unsplash.com/premium_photo-1673757121280-c1f539a4f7f0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+
